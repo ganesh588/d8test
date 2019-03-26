@@ -1,0 +1,30 @@
+uuid: 2a4148c9-c398-4a1f-bea2-6718483c266b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ebooks.body
+    - node.type.ebooks
+  module:
+    - text
+    - user
+id: node.ebooks.teaser
+targetEntityType: node
+bundle: ebooks
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: 7a1091eb-9a16-47a0-bba0-d885951724e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.ebooks
+  module:
+    - text
+id: node.ebooks.body
+field_name: body
+entity_type: node
+bundle: ebooks
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,28 @@
+uuid: 6b41271b-478e-4db4-b82a-a3daed2f8887
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ebooks.body
+    - node.type.ebooks
+  module:
+    - text
+    - user
+id: node.ebooks.default
+targetEntityType: node
+bundle: ebooks
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
